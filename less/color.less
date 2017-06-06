@@ -1,0 +1,642 @@
+@color: #dfb47d;
+@white: #ffffff;
+@light-white: #F2F2F2;
+@black: #000000;
+@light-black: #121212;
+@light-grey: #E9E9EB;
+@dark-grey: #3B3B3B;
+@grey: #8B8B8B;
+@white-trans-threefourth: rgba(255,255,255,0.75);
+@white-trans-half: rgba(255,255,255,0.5);
+@white-trans-quarter: rgba(255,255,255,0.25);
+@black-trans-half: rgba(0, 0, 0, 0.5);
+@black-trans-quarter: rgba(0, 0, 0, 0.25);
+@black-trans-threefourth: rgba(0, 0, 0, 0.75);
+@dark-grey-trans-half: rgba(59, 59, 59, .5);
+@grey-trans-half: rgba(202,202,204,0.5);
+
+
+
+
+// Color Classes
+
+.color{
+    color: @color;
+}
+
+.white {
+ color: @white;
+}
+
+.light-white {
+ color: @light-white;
+}
+
+.black {
+ color: @black;
+}
+
+.light-black {
+ color: @light-black;
+}
+
+.light-grey {
+ color: @light-grey;
+}
+
+.grey {
+ color: @grey;
+}
+
+.dark-grey {
+ color: @dark-grey;
+}
+
+
+
+//Background Color Classes
+
+.color-bg{
+    background-color: @color;
+}
+
+.white-bg {
+ background-color: @white;
+}
+
+.light-white-bg {
+ background-color: @light-white;
+}
+
+.black-bg {
+ background-color: @black;
+}
+
+.light-black-bg {
+ background-color: @light-black;
+}
+
+.light-grey-bg {
+ background-color: @light-grey;
+}
+
+.grey-bg {
+ background-color: @grey;
+}
+
+.dark-grey-bg {
+ background-color: @dark-grey;
+}
+
+
+//Transparent Background Color Classes
+
+.white-trans-half-bg{
+    background-color: @white-trans-half;
+}
+
+.white-trans-threefourth-bg{
+    background-color: @white-trans-threefourth;
+}
+
+.black-trans-half-bg{
+    background-color: @black-trans-half;
+}
+
+.black-trans-threefourth-bg{
+    background-color: @black-trans-threefourth;
+}
+
+.dark-grey-trans-half-bg{
+    background-color: @dark-grey-trans-half;
+}
+
+.black-trans-quarter-bg{
+    background-color: @black-trans-quarter;
+}
+
+.grey-trans-half-bg{
+    background-color: @grey-trans-half;
+}
+
+
+
+
+::-moz-selection { /* Code for Firefox */
+    color: @white;
+    background-color: @color;
+}
+::selection {
+    color: @white;
+    background-color: @color;
+}
+
+.lg-progress-bar .lg-progress{
+    background-color: @color;
+}
+
+//Buttons
+
+        //Theme Color
+.button-style-01.theme-color-button{
+    color: @light-black;
+}
+
+.button-style-01.theme-color-button::before{
+    background-color: @color;
+}
+
+.button-style-01.theme-color-button::after{
+    border-color: @color;
+}
+
+.button-style-01.theme-color-button:hover{
+    color: @color;
+}
+
+        //White Color
+.button-style-01.white-button{
+    color: @light-black;
+}
+
+.button-style-01.white-button::before{
+    background-color: @white;
+}
+
+.button-style-01.white-button::after{
+    border-color: @white;
+}
+
+.button-style-01.white-button:hover{
+    color: @white;
+}
+
+        //Black Color
+.button-style-01.black-button{
+    color: @white;
+}
+
+.button-style-01.black-button::before{
+    background-color: @black;
+}
+
+.button-style-01.black-button::after{
+    border-color: @black;
+}
+
+.button-style-01.black-button:hover{
+    color: @black;
+}
+
+
+//Owl Dots Color Styles
+
+.white-dots.owl-theme .owl-dots .owl-dot span{
+    background-color: @white;
+}
+
+.white-dots.owl-theme .owl-dots .owl-dot.active span{
+    background-color: @color;
+}
+
+.black-dots.owl-theme .owl-dots .owl-dot span{
+    background-color: @black;
+}
+
+.black-dots.owl-theme .owl-dots .owl-dot.active span{
+    background-color: @color;
+}
+
+.white-nav.owl-theme .owl-controls .owl-nav div{
+    color: @white;
+}
+
+.white-nav.owl-theme .owl-controls .owl-nav div:hover{
+    color: @color;
+}
+
+
+//Header
+
+.header-wrapper{
+    border-color: @white-trans-quarter;
+}
+
+.header-content-block .social-icons a:hover{
+    color: @color
+}
+
+.header-content-block .social-icons a.highlight{
+    color: @color
+}
+
+.header-content-block .search-icon:hover, .header-content-block .cart-icon:hover{
+    color: @white;
+}
+
+.header-animate{
+	background-color: @light-black;
+    border-color: @light-black;
+}
+
+.header-wrapper.mobile-header{
+    background-color: @light-black;
+    border-color: @light-black;
+}
+
+.header-wrapper.mobile-header .menu-container .menu{
+    background-color: @light-black;
+}
+
+.mobile-nav::after,.mobile-nav::before, .mobile-nav span {
+    background-color: @white;
+}
+
+.header-wrapper.mobile-header ul.menu > li > a{
+    background-color: @light-black;
+}
+
+.icon-active i{
+    color: @color;
+}
+
+// Menu
+
+ul.menu > li > a:focus{
+    color: @white;
+}
+
+ul.menu > li:not(.megamenu).has-dropdown > .dropdown > li > a{
+    background-color: @dark-grey;
+    color: @white;
+}
+
+ul.menu > li:not(.megamenu).has-dropdown > .dropdown > li:hover > a{
+    background-color: @light-black;
+    color: @color;
+}
+
+ul.menu > li:hover > a{
+    color: @color;
+}
+
+ul.menu > li:hover > span i{
+    color: @color;
+}
+
+ul.menu > li.hippo-menu-hovered > a{
+    color: @color;
+}
+
+.nav-active{
+    color: @color !important;
+}
+
+//Home01
+
+.interactive-video-block .play-button:hover{
+    color: @white;
+}
+
+.interactive-video-block .play-button:hover span{
+	color: @color;
+}
+
+.interactive-video-block .pause-button:hover span{
+	color: @color;
+}
+
+//Home04
+
+.home-link-block a{
+    border-color: @white;
+}
+
+.home-link-block a:hover{
+    color: @white;
+}
+
+//Home05
+
+.scroll-down a:hover{
+    background-color: @white;
+}
+
+.scroll-down a:hover span{
+    color: @black;
+}
+
+
+//Home06
+
+.mouse-icon{
+    border-color: @white;
+}
+
+
+//Home08
+
+.bg-move-block .text-block .content h3::after{
+    background-color: @color;
+}
+
+
+.text-ticker-block h3{
+    background-color: @color;
+}
+
+//About
+
+.about-static-block .round-button:hover i{
+    color: black;
+}
+
+.about-static-block h2::after{
+    background-color: @white;
+}
+
+.about-float-slider .content-block .item h4::after{
+    background-color: @color;
+}
+
+.about-float-slider .content-block .slick-arrow.next, .about-float-slider .content-block .slick-arrow.prev{
+    color: @white;
+}
+
+.about-float-slider .content-block .slick-arrow.next:hover, .about-float-slider .content-block .slick-arrow.prev:hover{
+    color: @color;
+}
+
+//Services
+
+.services-content-block:hover{
+    border-color: @color;
+}
+
+.services-content-head::after{
+    background-color: @color;
+}
+
+
+//Video Thumb
+
+.video-thumb-title h2::after{
+    background-color: @color;
+}
+
+.video-thumb-carousel .slick-dots li{
+    background-color: @white;
+}
+
+.video-thumb-carousel .slick-dots li:hover{
+    background-color: @color;
+}
+
+.video-thumb-carousel .slick-dots li.slick-active{
+    background-color: @color;
+}
+
+//Mobile App
+
+.mobile-app-text h2::after{
+    background-color: @black;
+}
+
+//Team
+
+.team-carousel .item:hover .team-member-details{
+    background-color: @color;
+}
+
+.team-carousel .item:hover .team-member-details .team-member-name{
+    color: @light-black;
+}
+
+.team-carousel .item:hover .team-member-details p{
+    color: @dark-grey;
+}
+
+.team-carousel .item .social-icons a:hover{
+    background-color: @color;
+    color: @light-black;
+}
+
+.team-carousel .slick-dots li{
+    background-color: @grey;
+}
+
+.team-carousel .slick-dots li:hover{
+    background-color: @color;
+}
+
+.team-carousel .slick-dots li.slick-active{
+    background-color: @color;
+}
+
+
+//testimonial
+
+.testimonial-title::after{
+    background-color: @color;
+}
+.testimonial .image-block.sync-multi .slick-dots li{
+    background-color: @grey;
+}
+
+.testimonial .image-block.sync-multi .slick-dots li:hover{
+    background-color: @color;
+}
+
+.testimonial .image-block.sync-multi .slick-dots li.slick-active{
+    background-color: @color;
+}
+
+/*Counter*/
+
+.counter-item span::after{
+    background-color: @color;
+}
+
+//portfolio-filter-nav
+
+.portfolio-filter-nav ul li a{
+    border-color: @dark-grey;
+}
+
+.portfolio-filter-nav ul li a.active{
+    color: @color;
+    border-color: @color;
+}
+
+.portfolio-filter-nav ul li a:hover{
+    color: @color;
+    border-color: @color;
+}
+
+.dh-overlay{
+    background-color: @color;
+}
+
+//Work Flow
+
+.work-flow .sub-section-title::after{
+    background-color: @white;
+}
+
+//blog
+
+.blog-item-text-content:hover h5{
+	color: @color;
+}
+
+.blog-item-text-content h5::after{
+    background-color: @color
+}
+
+//contact
+
+.address-map-container{
+    background-color: @white;
+}
+
+.address-map-container .address-map{
+    border-color: @black;
+}
+
+.map-close{
+    background-color: @black-trans-threefourth;
+    color: @white;
+}
+
+.address-block{
+    border-color: @grey;
+}
+
+.contact-block{
+    border-color: @grey;
+}
+
+.contact-form ::-webkit-input-placeholder{ /* WebKit browsers */
+    color: @light-white;
+}
+.contact-form :-moz-placeholder{ /* Mozilla Firefamber 4 to 18 */
+    color: @light-white;
+}
+.contact-form ::-moz-placeholder{ /* Mozilla Firefamber 19+ */
+    color: @light-white;
+}
+.contact-form :-ms-input-placeholder{ /* Internet Explorer 10+ */
+    color: @light-white;
+}
+
+.contact-carousel .slick-dots li{
+    background-color: @grey;
+}
+
+.contact-carousel .slick-dots li:hover{
+    background-color: @color;
+}
+
+.contact-carousel .slick-dots li.slick-active{
+    background-color: @color;
+}
+
+
+.footer-social-icons a{
+    background-color: @black;
+    color: @white;
+}
+
+.footer-social-icons a:hover{
+    background-color: @color;
+    color: @black;
+}
+
+.footer-text-content a:hover{
+    color: @grey;
+}
+
+.footer-links a:hover{
+    color: @color;
+}
+
+.to-top{
+    background-color: @light-black;
+    color: @white;
+}
+
+.to-top:hover {
+    background-color: @color;
+    color: @light-black;
+}
+
+.para-text-head::after{
+    background-color: @color;
+}
+
+.recent-project-carousel .item:hover .recent-project-title{
+    background-color: @color;
+}
+
+.recent-project-carousel .slick-prev, .recent-project-carousel .slick-next{
+    background-color: @black;
+}
+
+.recent-project-carousel .slick-prev:hover, .recent-project-carousel .slick-next:hover{
+    background-color: @color;
+}
+
+.recent-project-carousel .slick-prev:hover:before, .recent-project-carousel .slick-next:hover:before{
+    color: @black;
+}
+
+.blog-post-footer{
+    border-color: @black-trans-quarter;
+}
+
+
+.inner-page-navigation:hover{
+    color: @color;
+}
+
+.blog-post-share .social-icons a:hover{
+    color: @color;
+}
+
+.blog-post-tags a{
+    border-color: @light-black;
+}
+
+.blog-post-tags a:hover{
+    background-color: @light-black;
+    color: @color;
+    border-color: @light-black;
+}
+
+.commentlists .comment > div{
+    border-color: @black-trans-quarter;
+}
+
+.comment-info a:hover{
+    color: @color;
+}
+
+.commentform textarea, .commentform input[type="text"]{
+    border-color: @black-trans-quarter;
+}
+
+.commentform textarea:focus, .commentform input[type="text"]:focus{
+    border-color: @light-black;
+}
+
+.blog-post-sidebar > div{
+    border-color: @black-trans-quarter;
+}
+
+.blog-post-sidebar ul li a{
+    color: @grey;
+}
+
+.blog-post-sidebar ul li a:hover{
+    color: @color;
+}
